@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cd8686f-dab5-4656-b1c2-612bfebdf243" name="Changes" comment="initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day-64-flask-sql-api/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day-64-flask-sql-api/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day-64-flask-sql-api/movies.db" beforeDir="false" afterPath="$PROJECT_DIR$/day-64-flask-sql-api/movies.db" afterDir="false" />
-    </list>
+    <list default="true" id="2cd8686f-dab5-4656-b1c2-612bfebdf243" name="Changes" comment="initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -225,7 +221,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>

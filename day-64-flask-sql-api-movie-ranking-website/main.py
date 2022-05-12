@@ -6,7 +6,7 @@ from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 import requests
 
-API_KEY = "3619e7b9c68c95199e62b5f6f066fd35"
+API_KEY = ""
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
@@ -38,6 +38,7 @@ class EditForm(FlaskForm):
     new_rating = StringField('Your Rating Out of 10', validators=[DataRequired()])
     new_review = StringField('Your Review', validators=[DataRequired()])
     submit = SubmitField('Done')
+
 
 class AddForm(FlaskForm):
     movie_title = StringField("Movie Title", validators=[DataRequired()])
@@ -95,6 +96,7 @@ def add():
         return render_template("select.html", results=data["results"])
     return render_template("add.html", form=form)
 
+
 @app.route("/find")
 def find_movie():
     movie_api_id = request.args.get("id")
@@ -112,7 +114,6 @@ def find_movie():
         db.session.add(new_movie)
         db.session.commit()
         return redirect(url_for('edit', id=new_movie.id))
-
 
 
 if __name__ == '__main__':
