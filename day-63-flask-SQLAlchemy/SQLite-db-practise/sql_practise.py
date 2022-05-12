@@ -57,7 +57,7 @@ db.session.add(new_book)
 db.session.commit()
 
 # Read all records
-all_books = db.session.query(Book).all()
+all_books = Book.query.all()
 # Read A Particular Record By Query
 book = Book.query.filter_by(title="Harry Potter").first()
 
@@ -67,8 +67,10 @@ book_to_update.title = "Harry Potter and the Chamber of Secrets"
 db.session.commit()
 # Update A Record By PRIMARY KEY
 book_id = 1
+# get data from form:
+# new_title = request.form.get('new_title')  # '...' from Form class in py
 book_to_update = Book.query.get(book_id)
-book_to_update.title = "Harry Potter and the Goblet of Fire"
+book_to_update.title = "Harry Potter and the Goblet of Fire"  # new_title
 db.session.commit()
 
 # Delete A Particular Record By PRIMARY KEY
